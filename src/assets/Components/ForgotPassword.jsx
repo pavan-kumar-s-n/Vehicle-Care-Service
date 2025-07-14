@@ -13,15 +13,15 @@ function ForgotPassword() {
                     <div className="row mb-4 ">
                       <label htmlFor="username" className="col-sm-4 col-form-label">Username</label>
                         <div className="col-sm-12">
-                          <input type="text" className="form-control" id="username" />
+                          <input type="text" className="form-control" id="username" required/>
                          </div>
                       <label htmlFor="userid" className="col-sm-4 col-form-label">Userid</label>
                         <div className="col-sm-12">
-                          <input type="text" className="form-control" id="userid"/>
+                          <input type="text" className="form-control" id="userid" required/>
                         </div>
                        <label htmlFor="password" className="col-sm-7 col-form-label">Enter new password</label>
                         <div className="col-sm-12">
-                          <input type="password" className="form-control" id="password"/>
+                          <input type="password" className="form-control" id="password" required/>
                         </div>
                     </div>
                     <button type="submit" className=" btn btn-light  container mb-4 " style={{border:'2px solid grey'}}>Reset Your Password</button>

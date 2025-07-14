@@ -14,18 +14,18 @@ export default function Home() {
                     <div className="row mb-4 ">
                        <label htmlFor="Userid3" className="col-sm-4 col-form-label">User Id</label>
                        <div className="col-sm-12">
-      <                  input type="text" className="form-control" id="Userid3"/>
+      <                  input type="text" className="form-control" id="Userid3" required/>
                        </div>
                     </div>
                     <div className="row mb-4">
                        <label htmlFor="inputPassword3" className="col-sm-4 col-form-label">Password</label>
                        <div className="col-sm-12">
-                            <input type="password" className="form-control" id="inputPassword3"/>
+                            <input type="password" className="form-control" id="inputPassword3" required/>
                        </div>
                     </div>
                     <button type="submit" className=" btn btn-light  container mb-4 " style={{border:'2px solid grey'}}>Sign in</button>
                     <ul className='d-flex justify-content-between container ' > 
-                      <dt><Link href='#'style={{textDecoration:'none',color:'red'}}>New Registration</Link></dt>
+                      <dt><Link to="/NewRegistration"style={{textDecoration:'none',color:'red'}}>New Registration</Link></dt>
                       <dt><Link to="/ForgotPassword" style={{textDecoration:'none',color:'red'}}>Forgot Password</Link></dt>
                     </ul>
                  </form>

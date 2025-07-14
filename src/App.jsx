@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Nv from './assets/Components/Nv'
 import Footer from './assets/Components/Footer'
 import ForgotPassword from './assets/Components/ForgotPassword';
+import NewRegistration from './assets/Components/NewRegistration';
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Route path='/home' element={<Home/>} />
         <Route path='/ForgotPassword' element={<ForgotPassword/>} />
         <Route path='/Nv' element={<Nv/>} />
+        <Route path='/NewRegistration' element={<NewRegistration/>} />
       </Routes>
       <Footer/>
     </div>
