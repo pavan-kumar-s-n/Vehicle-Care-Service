@@ -18,10 +18,17 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold text-white mb-3">Quick Links</h3>
           <ul className="space-y-2 text-sm">
+<<<<<<< HEAD
             <li><a href="/" className="hover:text-blue-400 link-offset-2 link-underline link-underline-opacity-0">Home</a></li>
             <li><a href="/searchservices" className="hover:text-blue-400 link-offset-2 link-underline link-underline-opacity-0">Services</a></li>
             <li><a href="/providersignup" className="hover:text-blue-400 link-offset-2 link-underline link-underline-opacity-0">Provider Signup</a></li>
             <li><a href="/contact" className="hover:text-blue-400 link-offset-2 link-underline link-underline-opacity-0">Contact Us</a></li>
+=======
+            <li><a href="/" className="hover:text-blue-400">Home</a></li>
+            <li><a href="/searchservices" className="hover:text-blue-400">Services</a></li>
+            <li><a href="/providersignup" className="hover:text-blue-400">Provider Signup</a></li>
+            <li><a href="/contact" className="hover:text-blue-400">Contact Us</a></li>
+>>>>>>> c944ecd457cbad56b7fb9f333831dadad146b616
           </ul>
         </div>
 
@@ -29,10 +36,17 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold text-white mb-3">Support</h3>
           <ul className="space-y-2 text-sm">
+<<<<<<< HEAD
             <li><a href="/faq" className="hover:text-blue-400 link-offset-2 link-underline link-underline-opacity-0">FAQ</a></li>
             <li><a href="/signin" className="hover:text-blue-400 link-offset-2 link-underline link-underline-opacity-0">Sign In</a></li>
             <li><a href="/newregistration" className="hover:text-blue-400 link-offset-2 link-underline link-underline-opacity-0">Register</a></li>
             <li><a href="/forgotpassword" className="hover:text-blue-400 link-offset-2 link-underline link-underline-opacity-0">Forgot Password</a></li>
+=======
+            <li><a href="/faq" className="hover:text-blue-400">FAQ</a></li>
+            <li><a href="/signin" className="hover:text-blue-400">Sign In</a></li>
+            <li><a href="/newregistration" className="hover:text-blue-400">Register</a></li>
+            <li><a href="/forgotpassword" className="hover:text-blue-400">Forgot Password</a></li>
+>>>>>>> c944ecd457cbad56b7fb9f333831dadad146b616
           </ul>
         </div>
 
@@ -50,7 +64,11 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-gray-700 text-center py-4 text-sm">
+<<<<<<< HEAD
         © {new Date().getFullYear()} Mvj Boys Auto. All Rights Reserved.
+=======
+        © {new Date().getFullYear()} QnA Auto. All Rights Reserved.
+>>>>>>> c944ecd457cbad56b7fb9f333831dadad146b616
       </div>
     </footer>
   );

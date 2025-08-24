@@ -24,7 +24,11 @@ export default function ForgotPassword() {
         <img src={vehicleImg} alt="Reset Password" className="w-full h-40 object-cover" />
 
         <div className="p-6">
+<<<<<<< HEAD
           <h2 className="text-2xl font-bold text-center mb-5">Reset Password</h2>
+=======
+          <h2 className="text-2xl font-bold text-center mb-6">Reset Password</h2>
+>>>>>>> c944ecd457cbad56b7fb9f333831dadad146b616
 
           <form className="space-y-4" onSubmit={handleSubmit}>
             <input
@@ -56,7 +60,11 @@ export default function ForgotPassword() {
 
             <button
               type="submit"
+<<<<<<< HEAD
               className="w-full bg-blue-600 hover:bg-red-700 text-white py-2 rounded-lg transition"
+=======
+              className="w-full bg-red-600 hover:bg-red-700 text-white py-2 rounded-lg transition"
+>>>>>>> c944ecd457cbad56b7fb9f333831dadad146b616
             >
               Reset Password
             </button>

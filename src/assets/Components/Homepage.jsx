@@ -7,13 +7,21 @@ export default function Homepage() {
       <div className="flex gap-4">
         <Link
           to="/services"
+<<<<<<< HEAD
           className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition text-decoration-none"
+=======
+          className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition"
+>>>>>>> c944ecd457cbad56b7fb9f333831dadad146b616
         >
           Find Services
         </Link>
         <Link
           to="/provider-signup"
+<<<<<<< HEAD
           className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg transition text-decoration-none"
+=======
+          className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg transition"
+>>>>>>> c944ecd457cbad56b7fb9f333831dadad146b616
         >
           List Your Garage
         </Link>
