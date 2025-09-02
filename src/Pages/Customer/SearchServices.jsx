@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import ServiceCard from '../../assets/Components/ServiceCard';
+import SearchBar from '../../assets/Components/SearchBar';
 
 const mockServices = [
   {
@@ -25,6 +26,7 @@ const mockServices = [
 export default function SearchServices() {
   const [searchTerm, setSearchTerm] = useState('');
 
+  // Filter services based on search term
   const filteredServices = mockServices.filter(service =>
     service.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
     service.service.toLowerCase().includes(searchTerm.toLowerCase())
@@ -36,27 +38,29 @@ export default function SearchServices() {
       
       {/* Search Bar */}
       <div className="mb-6">
-        <input
-          type="text"
-          placeholder="Search by garage or service..."
-          className="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
+        <SearchBar
+          searchQuery={searchTerm}
+          setSearchQuery={setSearchTerm}
+          handleSearch={() => {}} // optional if you just filter live
         />
       </div>
 
       {/* Filters */}
       <div className="flex gap-2 mb-6">
-        <button className="px-3 py-1 bg-gray-200 rounded-full">All</button>
-        <button className="px-3 py-1 bg-gray-200 rounded-full">Oil Change</button>
-        <button className="px-3 py-1 bg-gray-200 rounded-full">Repairs</button>
+        <button onClick={() => setSearchTerm('')} className="px-3 py-1 bg-gray-200 rounded-full">All</button>
+        <button onClick={() => setSearchTerm('Oil Change')} className="px-3 py-1 bg-gray-200 rounded-full">Oil Change</button>
+        <button onClick={() => setSearchTerm('Repair')} className="px-3 py-1 bg-gray-200 rounded-full">Repairs</button>
       </div>
 
       {/* Services List */}
       <div className="space-y-4">
-        {filteredServices.map((service) => (
-          <ServiceCard key={service.id} service={service} />
-        ))}
+        {filteredServices.length > 0 ? (
+          filteredServices.map((service) => (
+            <ServiceCard key={service.id} service={service} />
+          ))
+        ) : (
+          <p className="text-gray-500">No services found</p>
+        )}
       </div>
     </div>
   );
