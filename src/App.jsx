@@ -15,6 +15,7 @@ import AboutUs from './assets/AboutUs';
 import ContactUs from './assets/ContactUs';
 import SettingsPage from './assets/SettingsPage';
 import FAQPage from './assets/FAQPage';
+import Chat from './assets/Chat';
 
 export default function App() {
   return (
@@ -36,7 +37,9 @@ export default function App() {
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/settings" element={<SettingsPage />} />
           <Route path="/faq" element={<FAQPage />} />
+          <Route path="/chat" element={<Chat />} />
         </Routes>
+        <Chat />
       </main>
       <Footer />
     </div>
